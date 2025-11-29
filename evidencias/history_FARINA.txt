@@ -1,0 +1,327 @@
+========== HISTORY DE COMANDOS - FARINA ==========
+Fecha: Sat Nov 29 01:37:03 UTC 2025
+
+    1  git config --global user.name "angel-farina"
+    2  git config --global user.email "zzyzxxrd@gmail.com"
+    3  git clone https://github.com/angel-farina/practica-linux--Ronderos_Farina-equipo_4-.git
+    4  ls
+    5  cd practica-linux--Ronderos_Farina-equipo_4-/
+    6  mkdir -p informacion permisos lvm archivos contenedores
+    7  ls
+    8  ls -la
+    9  git add .
+   10  git commit -m "Estructura inicial de carpetas"
+   11  git push
+   12  git config --global credential.helper store
+   13  git push
+   14  git add .
+   15  git status
+   16  ls
+   17  ip addr show
+   18  echo "========== IP DE LA VM - [FARINA] ==========" >> informacion/ip_vm.txt
+   19  ip addr show | grep "inet " | grep -v "127.0.0.1" >> informacion/ip_vm.txt
+   20  echo "" >> informacion/ip_vm.txt
+   21  ls
+   22  cd informacion/
+   23  ls
+   24  cd ..
+   25  cat informacion/ip_vm.txt
+   26  git add informacion/ip_vm.txt
+   27  git commit -m "IP de la VM - [FARINA]"
+   28  git push
+   29  echo "========== FASTFETCH DE [FARINA] ==========" >> informacion/system_info.txt
+   30  fastfetch >> informacion/system_info.txt
+   31  echo "" >> informacion/system_info.txt
+   32  cat informacion/system_info.txt
+   33  git add informacion/system_info.txt
+   34  git commit -m "Fastfetch de [FARINA]"
+   35  git push
+   36  mkdir -p /home/vagrant/[FARINA]_espacio
+   37  cd /home/vagrant/[FARINA]_espacio
+   38  echo "Este es mi archivo privado" > privado.txt
+   39  chmod 600 privado.txt
+   40  echo "Este es mi archivo público" > publico.txt
+   41  chmod 644 publico.txt
+   42  ls -la
+   43  sudo useradd -m estudiante1
+   44  sudo useradd -m estudiante2
+   45  sudo useradd -m estudiante3
+   46  cat /etc/passwd | grep estudiante
+   47  sudo groupadd equipotrabajo
+   48  sudo usermod -aG equipotrabajo estudiante1
+   49  sudo usermod -aG equipotrabajo estudiante2
+   50  sudo usermod -aG equipotrabajo estudiante3
+   51  sudo usermod -aG equipotrabajo vagrant
+   52  sudo mkdir /tmp/colaborativo
+   53  sudo chgrp equipotrabajo /tmp/colaborativo
+   54  sudo chmod 770 /tmp/colaborativo
+   55  getent group equipotrabajo
+   56  echo "========== INFORMACIÓN DE USUARIOS Y GRUPOS - [FARINA] ==========" > permisos/usuarios_[FARINA].txt
+   57  echo "Usuario actual:" >> permisos/usuarios_[FARINA].txt
+   58  whoami >> permisos/usuarios_[FARINA].txt
+   59  echo "Grupos del usuario:" >> permisos/usuarios_[FARINA].txt
+   60  groups >> permisos/usuarios_[FARINA].txt
+   61  echo "ID del usuario:" >> permisos/usuarios_[FARINA].txt
+   62  id >> permisos/usuarios_[FARINA].txt
+   63  echo "Usuarios del sistema:" >> permisos/usuarios_[FARINA].txt
+   64  cat /etc/passwd | grep estudiante >> permisos/usuarios_[FARINA].txt
+   65  echo "" >> permisos/usuarios_[FARINA].txt
+   66  cd 
+   67  ls
+   68  cd practica-linux--Ronderos_Farina-equipo_4-/
+   69  ls
+   70  cd permisos/
+   71  ls
+   72  cd ..
+   73  pwd
+   74  echo "========== INFORMACIÓN DE USUARIOS Y GRUPOS - FARINA ==========" > permisos/usuarios_FARINA.txt
+   75  echo "Usuario actual:" >> permisos/usuarios_FARINA.txt
+   76  whoami >> permisos/usuarios_FARINA.txt
+   77  echo "Grupos del usuario:" >> permisos/usuarios_FARINA.txt
+   78  groups >> permisos/usuarios_FARINA.txt
+   79  echo "ID del usuario:" >> permisos/usuarios_FARINA.txt
+   80  id >> permisos/usuarios_FARINA.txt
+   81  echo "Usuarios del sistema:" >> permisos/usuarios_FARINA.txt
+   82  cat /etc/passwd | grep estudiante >> permisos/usuarios_FARINA.txt
+   83  echo "" >> permisos/usuarios_FARINA.txt
+   84  echo "========== VERIFICACIÓN DE PERMISOS - FARINA ==========" >> permisos/verificacion_permisos.txt
+   85  echo "Archivos en mi directorio personal:" >> permisos/verificacion_permisos.txt
+   86  ls -la /home/vagrant/FARINA_espacio/ >> permisos/verificacion_permisos.txt
+   87  echo "Archivos en directorio colaborativo:" >> permisos/verificacion_permisos.txt
+   88  ls -la /tmp/colaborativo/ >> permisos/verificacion_permisos.txt
+   89  echo "Información del grupo equipotrabajo:" >> permisos/verificacion_permisos.txt
+   90  getent group equipotrabajo >> permisos/verificacion_permisos.txt
+   91  echo "" >> permisos/verificacion_permisos.txt
+   92  # Ver qué directorios personales existen
+   93  ls -la /home/vagrant/ | grep espacio
+   94  mv /home/vagrant/[FARINA]_espacio /home/vagrant/FARINA_espacio
+   95  ls -la /home/vagrant/ | grep espacio
+   96  cd ~/practica-linux-Ronderos_Farina-equipo_4-
+   97  ls
+   98  echo "========== VERIFICACIÓN DE PERMISOS - FARINA ==========" >> permisos/verificacion_permisos.txt
+   99  echo "Archivos en mi directorio personal:" >> permisos/verificacion_permisos.txt
+  100  ls -la /home/vagrant/FARINA_espacio/ >> permisos/verificacion_permisos.txt
+  101  echo "" >> permisos/verificacion_permisos.txt
+  102  echo "Archivos en directorio colaborativo:" >> permisos/verificacion_permisos.txt
+  103  sudo ls -la /tmp/colaborativo/ >> permisos/verificacion_permisos.txt
+  104  echo "" >> permisos/verificacion_permisos.txt
+  105  echo "Información del grupo equipotrabajo:" >> permisos/verificacion_permisos.txt
+  106  getent group equipotrabajo >> permisos/verificacion_permisos.txt
+  107  echo "" >> permisos/verificacion_permisos.txt
+  108  cat permisos/verificacion_permisos.txt
+  109  git add permisos/
+  110  git commit -m "Permisos y usuarios - Alumno A"
+  111  git push
+  112  lsblk
+  113  sudo pvcreate /dev/sdc
+  114  sudo vgcreate vg_datos_FARINA /dev/sdc
+  115  sudo lvcreate -L 1.5G -n lv_storage_FARINA vg_datos_FARINA
+  116  sudo mkfs.ext4 /dev/vg_datos_FARINA/lv_storage_FARINA
+  117  sudo mkdir /mnt/lvm_storage_FARINA
+  118  sudo mount /dev/vg_datos_FARINA/lv_storage_FARINA /mnt/lvm_storage_FARINA
+  119  echo "/dev/vg_datos_FARINA/lv_storage_FARINA /mnt/lvm_storage_FARINA ext4 defaults 0 0" | sudo tee -a /etc/fstab
+  120  df -h | grep lvm
+  121  echo "========== VERIFICACIÓN DE LVM - FARINA ==========" > lvm/lvm-FARINA.txt
+  122  echo "=== ESPACIO EN DISCO SIN LVM MONTADO ===" >> lvm/lvm-FARINA.txt
+  123  sudo umount /mnt/lvm_storage_FARINA
+  124  df -h >> lvm/lvm-FARINA.txt
+  125  echo "" >> lvm/lvm-FARINA.txt
+  126  echo "=== ESPACIO EN DISCO CON LVM MONTADO ===" >> lvm/lvm-FARINA.txt
+  127  sudo mount /dev/vg_datos_FARINA/lv_storage_FARINA /mnt/lvm_storage_FARINA
+  128  df -h >> lvm/lvm-FARINA.txt
+  129  echo "" >> lvm/lvm-FARINA.txt
+  130  echo "=== ESCANEO DE LOGICAL VOLUMES ===" >> lvm/lvm-FARINA.txt
+  131  sudo lvscan >> lvm/lvm-FARINA.txt
+  132  echo "" >> lvm/lvm-FARINA.txt
+  133  echo "=== ESCANEO DE PHYSICAL VOLUMES ===" >> lvm/lvm-FARINA.txt
+  134  sudo pvscan >> lvm/lvm-FARINA.txt
+  135  echo "" >> lvm/lvm-FARINA.txt
+  136  echo "=== ESCANEO DE VOLUME GROUPS ===" >> lvm/lvm-FARINA.txt
+  137  sudo vgscan >> lvm/lvm-FARINA.txt
+  138  echo "" >> lvm/lvm-FARINA.txt
+  139  cat lvm/lvm-FARINA.txt
+  140  git add lvm/
+  141  git commit -m "LVM configurado - Alumno A"
+  142  git push
+  143  sudo mkdir -p /mnt/lvm_storage_FARINA/proyectos/activos
+  144  sudo mkdir -p /mnt/lvm_storage_FARINA/proyectos/archivados
+  145  sudo mkdir -p /mnt/lvm_storage_FARINA/respaldos
+  146  sudo mkdir -p /mnt/lvm_storage_FARINA/temporal
+  147  cd /mnt/lvm_storage_FARINA/temporal/
+  148  for i in {01..10}; do     touch documento_$i.txt;     echo "Contenido del documento $i" > documento_$i.txt; done
+  149  sudo chown -R vagrant:vagrant /mnt/lvm_storage_FARINA
+  150  ls -la /mnt/lvm_storage_FARINA
+  151  for i in {01..10}; do     touch documento_$i.txt;     echo "Contenido del documento $i" > documento_$i.txt; done
+  152  ls -la
+  153  cp documento_01.txt documento_02.txt documento_03.txt documento_04.txt documento_05.txt ../proyectos/activos/
+  154  mv documento_06.txt documento_07.txt documento_08.txt ../proyectos/archivados/
+  155  cp documento_09.txt documento_10.txt ../respaldos/
+  156  rm documento_09.txt documento_10.txt
+  157  ls -la
+  158  cd ~/practica-linux--Ronderos_Farina-equipo_4-
+  159  echo "========== VERIFICACIÓN DE ARCHIVOS - FARINA ==========" >> archivos/verificacion_archivos.txt
+  160  echo "Estructura de directorios creada:" >> archivos/verificacion_archivos.txt
+  161  find /mnt/lvm_storage_FARINA -type d >> archivos/verificacion_archivos.txt
+  162  echo "Archivos en cada directorio:" >> archivos/verificacion_archivos.txt
+  163  find /mnt/lvm_storage_FARINA -type f -exec ls -la {} \; >> archivos/verificacion_archivos.txt
+  164  echo "" >> archivos/verificacion_archivos.txt
+  165  cat archivos/verificacion_archivos.txt
+  166  git add archivos/
+  167  git commit -m "Gestión de archivos - Alumno A"
+  168  git push
+  169  cd contenedores/
+  170  nano docker-compose.yml
+  171  nano prometheus.yml
+  172  docker-compose up -d
+  173  docker-compose logs
+  174  docker-compose config
+  175  nano docker-compose.yml
+  176  nano prometheus.yml
+  177  clear
+  178  docker-compose down
+  179  docker-compose up -d
+  180  docker ps
+  181  docker ps -a | grep -i exit
+  182  docker-compose logs > logs_completos.txt
+  183  echo "========== VERIFICACIÓN CONTENEDORES - FARINA ==========" >> verificacion_contenedores.txt
+  184  echo "=== IP DE LA VM ===" >> verificacion_contenedores.txt
+  185  hostname -I >> verificacion_contenedores.txt
+  186  echo "" >> verificacion_contenedores.txt
+  187  echo "=== CONTENEDORES EN EJECUCIÓN ===" >> verificacion_contenedores.txt
+  188  docker ps >> verificacion_contenedores.txt
+  189  echo "" >> verificacion_contenedores.txt
+  190  echo "=== ESTADO DE DOCKER-COMPOSE ===" >> verificacion_contenedores.txt
+  191  docker-compose ps >> verificacion_contenedores.txt
+  192  echo "" >> verificacion_contenedores.txt
+  193  echo "=== REDES DE DOCKER ===" >> verificacion_contenedores.txt
+  194  docker network ls >> verificacion_contenedores.txt
+  195  echo "" >> verificacion_contenedores.txt
+  196  echo "=== VOLÚMENES DE DOCKER ===" >> verificacion_contenedores.txt
+  197  docker volume ls >> verificacion_contenedores.txt
+  198  echo "" >> verificacion_contenedores.txt
+  199  nano errores_encontrados.md
+  200  cd ..
+  201  ls
+  202  cd contenedores/
+  203  mkdir capturas
+  204  cd ~/practica-linux-apellidos-equipo
+  205  cd ..
+  206  git add contenedores/
+  207  git commit -m "Docker Compose configurado y corregido - Alumno B"
+  208  git push
+  209  sudo apt-get update
+  210  sudo apt-get install -y apache2
+  211  sudo apt-get install -y mysql-server
+  212  sudo apt-get install -y php libapache2-mod-php php-mysql
+  213  echo "=== Versiones Instaladas ===" > ~/lamp_versions.txt
+  214  apache2 -v >> ~/lamp_versions.txt
+  215  mysql --version >> ~/lamp_versions.txt
+  216  php -v >> ~/lamp_versions.txt
+  217  cat ~/lamp_versions.txt
+  218  sudo systemctl start mysql
+  219  sudo systemctl enable mysql
+  220  sudo systemctl status mysql
+  221  sudo mysql_secure_installation
+  222  sudo mysql << EOF
+CREATE DATABASE tp_final_db;
+CREATE USER 'alumno'@'localhost' IDENTIFIED BY 'practica123';
+GRANT ALL PRIVILEGES ON tp_final_db.* TO 'alumno'@'localhost';
+FLUSH PRIVILEGES;
+EOF
+
+  223  sudo mysql -e "SHOW DATABASES;"
+  224  sudo mysql -e "SELECT User, Host FROM mysql.user WHERE User='alumno';"
+  225  sudo a2enmod rewrite
+  226  sudo systemctl restart apache2
+  227  sudo systemctl enable apache2
+  228  sudo systemctl status apache2
+  229  curl http://localhost
+  230  sudo cp /var/www/html/index.html /var/www/html/index.html.backup
+  231  sudo nano /var/www/html/index.html
+  232  rm /var/www/html/index.html
+  233  sudo nano /var/www/html/index.html
+  234  sudo nano /var/www/html/info.php
+  235  sudo nano /var/www/html/test_db.php
+  236  sudo chown -R www-data:www-data /var/www/html/
+  237  sudo chmod -R 755 /var/www/html/
+  238  ls -la /var/www/html/
+  239  sudo systemctl status apache2
+  240  sudo systemctl status mysql
+  241  sudo netstat -tlnp | grep :80
+  242  sudo netstat -tlnp | grep :3306
+  243  mkdir -p lamp
+  244  echo "========== VERIFICACIÓN SERVIDOR LAMP - FARINA ==========" > lamp/verificacion_lamp.txt
+  245  echo "" >> lamp/verificacion_lamp.txt
+  246  echo "=== VERSIONES INSTALADAS ===" >> lamp/verificacion_lamp.txt
+  247  apache2 -v >> lamp/verificacion_lamp.txt
+  248  echo "" >> lamp/verificacion_lamp.txt
+  249  mysql --version >> lamp/verificacion_lamp.txt
+  250  echo "" >> lamp/verificacion_lamp.txt
+  251  php -v >> lamp/verificacion_lamp.txt
+  252  echo "" >> lamp/verificacion_lamp.txt
+  253  echo "=== ESTADO DE SERVICIOS ===" >> lamp/verificacion_lamp.txt
+  254  echo "--- Apache2 ---" >> lamp/verificacion_lamp.txt
+  255  sudo systemctl status apache2 --no-pager >> lamp/verificacion_lamp.txt
+  256  echo "" >> lamp/verificacion_lamp.txt
+  257  echo "--- MySQL ---" >> lamp/verificacion_lamp.txt
+  258  sudo systemctl status mysql --no-pager >> lamp/verificacion_lamp.txt
+  259  echo "" >> lamp/verificacion_lamp.txt
+  260  echo "=== PUERTOS EN ESCUCHA ===" >> lamp/verificacion_lamp.txt
+  261  sudo netstat -tlnp | grep -E '(apache|mysql)' >> lamp/verificacion_lamp.txt
+  262  echo "" >> lamp/verificacion_lamp.txt
+  263  sudo: netstat: command not found
+  264  sudo apt-get install -y net-tools
+  265  sudo netstat -tlnp | grep -E '(apache|mysql)'
+  266  echo "=== PUERTOS EN ESCUCHA ===" >> lamp/verificacion_lamp.txt
+  267  sudo netstat -tlnp | grep -E '(apache|mysql)' >> lamp/verificacion_lamp.txt
+  268  echo "" >> lamp/verificacion_lamp.txt
+  269  echo "=== ARCHIVOS WEB CREADOS ===" >> lamp/verificacion_lamp.txt
+  270  ls -la /var/www/html/ >> lamp/verificacion_lamp.txt
+  271  echo "" >> lamp/verificacion_lamp.txt
+  272  echo "=== BASES DE DATOS ===" >> lamp/verificacion_lamp.txt
+  273  sudo mysql -e "SHOW DATABASES;" >> lamp/verificacion_lamp.txt
+  274  echo "" >> lamp/verificacion_lamp.txt
+  275  echo "=== USUARIO DE BASE DE DATOS ===" >> lamp/verificacion_lamp.txt
+  276  sudo mysql -e "SELECT User, Host FROM mysql.user WHERE User='alumno';" >> lamp/verificacion_lamp.txt
+  277  echo "" >> lamp/verificacion_lamp.txt
+  278  cat lamp/verificacion_lamp.txt
+  279  hostname -I
+  280  mkdir -p lamp/capturas
+  281  nano lamp/comandos_ejecutados.md
+  282  ls
+  283  lslamp
+  284  ls lamp
+  285  cd lamp/capturas/
+  286  cd..
+  287  cd ..
+  288  cd..
+  289  cd ..
+  290  cd /
+  291  ls
+  292  cd 
+  293  ls
+  294  cd practica-linux--Ronderos_Farina-equipo_4-/
+  295  ls
+  296  ls lamp/
+  297  git add .
+  298  git status
+  299  git commit -m "lamp"
+  300  git push
+  301  git pull
+  302  ls lamp/
+  303  ls
+  304  nano lamp/comandos_ejecutados.md 
+  305  git add .
+  306  git commit -m "Servidor LAMP completo - Ejercicio Bonus - FARINA"
+  307  git push
+  308  clear
+  309  history
+  310  ls
+  311  cd informacion/
+  312  ls
+  313  cd ..
+  314  mkdir -p evidencias
+  315  echo "========== HISTORY DE COMANDOS - FARINA ==========" > evidencias/history_FARINA.txt
+  316  echo "Fecha: $(date)" >> evidencias/history_FARINA.txt
+  317  echo "" >> evidencias/history_FARINA.txt
+  318  history >> evidencias/history_FARINA.txt
