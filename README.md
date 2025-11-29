@@ -317,12 +317,12 @@ Página principal con diseño moderno usando gradientes CSS.
 - Grid de componentes tecnológicos
 - Animaciones hover
 
-![Index HTML](evidencias/index_html.jpg)
+![Index HTML](evidencias/capturas/index_html.jpg)
 
 #### 2. info.php
 Muestra información completa de PHP usando `phpinfo()`.
 
-![Info PHP](evidencias/info_php.jpg)
+![Info PHP](evidencias/capturas/info_php.jpg)
 
 #### 3. test_db.php
 Prueba la conexión a la base de datos MySQL.
@@ -332,7 +332,7 @@ Prueba la conexión a la base de datos MySQL.
 - Verifica credenciales
 - Muestra estado de conexión
 
-![Test DB](evidencias/test_db_php.jpg)
+![Test DB](evidencias/capturas/test_db_php.jpg)
 
 ### Verificación de Servicios
 
