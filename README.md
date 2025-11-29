@@ -359,8 +359,8 @@ sudo netstat -tlnp | grep -E '(apache|mysql)'
 # tcp   0  0 127.0.0.1:3306  0.0.0.0:*  LISTEN  5678/mysqld
 ```
 
-![Apache Status](evidencias/capturas/lamp/apache_status.jpg)
-![MySQL Status](evidencias/capturas/lamp/mysql_status.jpg)
+![Apache Status](evidencias/capturas/apache_status.jpg)
+![MySQL Status](evidencias/capturas/mysql_status.jpg)
 
 ---
 
@@ -389,7 +389,7 @@ sudo netstat -tlnp | grep -E '(apache|mysql)'
 
 ## 📸 Capturas de Evidencia
 
-Todas las capturas de pantalla están organizadas en la carpeta `evidencias/`:
+Todas las capturas de pantalla están organizadas en la carpeta `evidencias/capturas`:
 
 ### Docker
 - `docker_ps.png` - Contenedores en ejecución
