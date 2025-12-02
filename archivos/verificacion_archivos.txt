@@ -57,3 +57,36 @@ Archivos en cada directorio:
 -rw-r--r-- 1 root root 27 Nov 30 16:32 /mnt/lvm_storage_ronderos/temporal/documento_01.txt
 -rw-r--r-- 1 root root 27 Nov 30 16:32 /mnt/lvm_storage_ronderos/temporal/documento_03.txt
 
+========== VERIFICACIÓN DE ARCHIVOS - RONDEROS -ALUMNO C ==========
+Estructura de directorios creada:
+/mnt/lvm_storage_ronderos-alumno-c
+/mnt/lvm_storage_ronderos-alumno-c/proyectos
+/mnt/lvm_storage_ronderos-alumno-c/proyectos/archivados
+/mnt/lvm_storage_ronderos-alumno-c/proyectos/activos
+/mnt/lvm_storage_ronderos-alumno-c/lost+found
+/mnt/lvm_storage_ronderos-alumno-c/temporal
+/mnt/lvm_storage_ronderos-alumno-c/respaldos
+/mnt/lvm_storage_ronderos-alumno-c
+/mnt/lvm_storage_ronderos-alumno-c/proyectos
+/mnt/lvm_storage_ronderos-alumno-c/proyectos/archivados
+/mnt/lvm_storage_ronderos-alumno-c/proyectos/activos
+/mnt/lvm_storage_ronderos-alumno-c/lost+found
+/mnt/lvm_storage_ronderos-alumno-c/temporal
+/mnt/lvm_storage_ronderos-alumno-c/respaldos
+Archivos en cada directorio:
+-rw-r--r-- 1 root root 27 Dec  2 02:01 /mnt/lvm_storage_ronderos-alumno-c/proyectos/archivados/documento_06.txt
+-rw-r--r-- 1 root root 27 Dec  2 02:01 /mnt/lvm_storage_ronderos-alumno-c/proyectos/archivados/documento_08.txt
+-rw-r--r-- 1 root root 27 Dec  2 02:01 /mnt/lvm_storage_ronderos-alumno-c/proyectos/archivados/documento_07.txt
+-rw-r--r-- 1 root root 27 Dec  2 02:07 /mnt/lvm_storage_ronderos-alumno-c/proyectos/activos/documento_04.txt
+-rw-r--r-- 1 root root 27 Dec  2 02:07 /mnt/lvm_storage_ronderos-alumno-c/proyectos/activos/documento_02.txt
+-rw-r--r-- 1 root root 27 Dec  2 02:07 /mnt/lvm_storage_ronderos-alumno-c/proyectos/activos/documento_01.txt
+-rw-r--r-- 1 root root 27 Dec  2 02:07 /mnt/lvm_storage_ronderos-alumno-c/proyectos/activos/documento_05.txt
+-rw-r--r-- 1 root root 27 Dec  2 02:07 /mnt/lvm_storage_ronderos-alumno-c/proyectos/activos/documento_03.txt
+-rw-r--r-- 1 root root 27 Dec  2 02:01 /mnt/lvm_storage_ronderos-alumno-c/temporal/documento_04.txt
+-rw-r--r-- 1 root root 27 Dec  2 02:01 /mnt/lvm_storage_ronderos-alumno-c/temporal/documento_02.txt
+-rw-r--r-- 1 root root 27 Dec  2 02:01 /mnt/lvm_storage_ronderos-alumno-c/temporal/documento_01.txt
+-rw-r--r-- 1 root root 27 Dec  2 02:01 /mnt/lvm_storage_ronderos-alumno-c/temporal/documento_05.txt
+-rw-r--r-- 1 root root 27 Dec  2 02:01 /mnt/lvm_storage_ronderos-alumno-c/temporal/documento_03.txt
+-rw-r--r-- 1 root root 27 Dec  2 02:08 /mnt/lvm_storage_ronderos-alumno-c/respaldos/documento_10.txt
+-rw-r--r-- 1 root root 27 Dec  2 02:08 /mnt/lvm_storage_ronderos-alumno-c/respaldos/documento_09.txt
+
